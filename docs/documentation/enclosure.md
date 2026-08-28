@@ -83,7 +83,7 @@ directly with the ABS mounting plate hardware. STL files for all mounting
 components are provided in the [CAD]({{ site.baseurl }}/cad/) section. Install the heat-set
 inserts to the brackets before adhering them to the case.
 
-![Corner Mount Overview]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/mounting_plate.png)
+![Corner Mount Overview]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/mounting_plate.jpg)
 
 *Figure 1. Internal corner mounting brackets used to secure the mounting plate.*
 
@@ -103,7 +103,7 @@ Recommended procedure:
 {: .important }
 > Do not mount hardware to the brackets or subject them to load until the epoxy has fully cured — loading them early can weaken the bond permanently.
 
-![Bonded Corner Mounts]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/corner_mounts.png)
+![Bonded Corner Mounts]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/corner_mounts.jpg)
 
 *Figure 2. Epoxied internal mounting brackets with integrated heat-set inserts.*
 
@@ -118,11 +118,11 @@ The brackets contain M5 heat-set threaded inserts and support the acrylic
 interface plate used for external connectors, display hardware, user interface
 peripherals, and power switches.
 
-![Top interface plate mounting system]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/top_plate_mounts.png)
+![Top interface plate mounting system]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/top_plate_mounts.jpg)
 
 *Figure 3. Top interface plate mounting system.*
 
-![Top interface plate mounting system]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/top_plate_mounts_2.png)
+![Top interface plate mounting system]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/top_plate_mounts_2.jpg)
 
 *Figure 4. Top interface plate and mounting plate brackets.*
 
@@ -135,7 +135,7 @@ interface mechanically with the robot body. The mounting system is attached to
 the underside of the enclosure and allows the compute box to remain securely
 seated on the cylindrical body structure of the robot.
 
-![External robot mounting assembly attached to the underside of the enclosure.]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/robot_mount.png)
+![External robot mounting assembly attached to the underside of the enclosure.]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/robot_mount.jpg)
 
 *Figure 5. External robot mounting assembly attached to the underside of the enclosure.*
 
@@ -170,7 +170,7 @@ operation.
 First, 3D-print the primary bracket mounts (4), install M5 heat-set inserts, and
 epoxy them to the bottom of the case.
 
-![Primary brackets epoxied to the bottom of the case.]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/robot_mount_part_1.png)
+![Primary brackets epoxied to the bottom of the case.]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/robot_mount_part_1.jpg)
 
 *Figure 7. Primary brackets epoxied to the bottom of the case.*
 
@@ -181,14 +181,14 @@ the inner edges of the parts will make sure the parts are bonded strongly.
 Next, 3D-print the adjustment brackets (4) and install M5 heat-set inserts.
 Then, use M5 fasteners to attach these to the foot assembly.
 
-![Curved foot assembly attached to the adjustment brackets.]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/robot_mount_part_2.png)
+![Curved foot assembly attached to the adjustment brackets.]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/robot_mount_part_2.jpg)
 
 *Figure 8. Curved foot assembly attached to the adjustment brackets.*
 
 Lastly, use M5 fasteners to attach the assembly to the primary mounting
 brackets.
 
-![Installed external robot mounting assembly.]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/robot_mount_assembly_full.png)
+![Installed external robot mounting assembly.]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/robot_mount_assembly_full.jpg)
 
 *Figure 9. Installed external robot mounting assembly.*
 
@@ -201,7 +201,7 @@ installing a screen. This screen is placed inside the lid of the case, so that
 when the case is opened, the user can see the peripherals panel in the bottom
 and the screen in the lid, like a laptop.
 
-![Peripheral panel and screen.]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/end_product.png)
+![Peripheral panel and screen.]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/end_product.jpg)
 
 First, 3D print the screen mounting brackets, provided in the [CAD]({{ site.baseurl }}/cad/)
 section. These were designed using the inner shell of the case so that they
@@ -209,13 +209,13 @@ perfectly rest on the features of the inner wall of the lid. Depending on your
 3D-printer bed size, you may need to cut these into two sections so they fit
 on the build plate, as shown below.
 
-![3D-printed screen mounting brackets.]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/screen_mounting_1.png)
+![3D-printed screen mounting brackets.]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/screen_mounting_1.jpg)
 
 Install M5 heat-set inserts in the holes (two on each bracket). Adhere the
 brackets to the case using epoxy, lining the printed parts with the wall
 features, and resting in the bottom of the lid. The end product should look as
 below.
 
-![Installed screen brackets.]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/screen_mounting_2.png)
+![Installed screen brackets.]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/screen_mounting_2.jpg)
 
 Next: continue with [Assembly]({{ site.baseurl }}/documentation/assembly.html).
