@@ -50,6 +50,7 @@ Assembly proceeds in the following order:
 6. Mount communication interfaces
 7. Screen installation
 8. Assembly with robot base
+9. Final inspection
 
 ---
 
@@ -85,7 +86,7 @@ Assembly proceeds in the following order:
 <img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/qb3_connectors_pinouts.png" width="500" class="center-img"/>
 <img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/qb3_connectors.png" width="500" class="center-img"/>
 
-6. Solder one end of 2 - 22 AWG stranded wires (~12 inched long each) to the solenoid terminals (white to DC power +, black to DC power -). Cover wires with braided wire sleeving and insert two heat shrink tubing section of about an inch each. On the other end of the wire, crimp the ends and install on a 2-pin JST-HX connector. Follow the wiring diagram to have wires in the right order on the connector. Use a hot air gun to shrink the tubing.
+6. Solder one end of 2 - 22 AWG stranded wires (~12 inches long each) to the solenoid terminals (white to DC power +, black to DC power -). Cover wires with braided wire sleeving and insert two heat shrink tubing section of about an inch each. On the other end of the wire, crimp the ends and install on a 2-pin JST-HX connector. Follow the wiring diagram to have wires in the right order on the connector. Use a hot air gun to shrink the tubing.
 <img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/solenoid_connector.png" width="500" class="center-img"/>
 
 ---
@@ -275,7 +276,106 @@ Continue with [Wiring → Section 1]({{ site.baseurl }}/documentation/wiring.htm
 2. Install the side handles, peripheral connectors, push button (with cover), E-button, and LCD screen as shown. From left to right: LCD screen, HDMI connector, USB-A connector, USB-A connector, Ethernet RJ45 connector, push button with cover, E-button.
 <img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/panel_2.png" width="500" class="center-img"/>
 
-3. Grab the end of the wires created in Step 2.7 (coming from the battery adapter fuse holder). Identify the cable inside the sleeve that is coming from the fuse holder; connect to the screw-in terminal in the push button. Screw another 3in segment of 16 AWG red wire to the other push button terminal.
+3. Grab the end of the wires created in Step 2.7 (coming from the battery adapter fuse holder). Identify the cable inside the sleeve that is coming from the fuse holder; connect to the screw-in terminal in the push button. Screw another 3" segment of 16 AWG red wire to the other push button terminal.
 
 4. The E-button should come with 2.8mm female spade crimp connectors. Crimp one on the short wire connected to the push button in the previous step, and another on the long wire coming from the sleeve.
 <img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/power_cable.png" width="500" class="center-img"/>
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/power_cable_2.png" width="500" class="center-img"/>
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/power_cable_3.png" width="500" class="center-img"/>
+
+5. On the other end of the sleeve, there is a free end on a red wire, and a black wire coming from the battery connector and fuse holder (see Step 2.7). Connect these to the lever connector's last empty slot (see Step 2.14).
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/power_cable_4.png" width="500" class="center-img"/>
+
+6. Connect the cable with Dupont connectors coming from the Jetson to the LCD screen.
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/lcd_cable.png" width="500" class="center-img"/>
+
+7. Connect the USB 3.0, A-to-A, Male-to-Male cables (2) to the panel ports. Connect the Ethernet Extension Cable 1ft Female-to-Male as well.
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/panel_3.png" width="500" class="center-img"/>
+
+8. Connect the Right Angle USB A to USB B male connector from the Arduino to the Jetson.
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/arduino_usb.png" width="500" class="center-img"/>
+
+9. Connect the USB A and ethernet cables to the Jetson. Connect the DP-to-HDMI cable as well.
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/panel_4.png" width="500" class="center-img"/>
+
+10. Rest the panel in position over the interface panel mounts. 3D-print the vents and slide them into the panel.
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/ventilation_1.png" width="500" class="center-img"/>
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/ventilation_2.png" width="500" class="center-img"/>
+
+---
+
+## Step 7: Screen installation
+
+### Required components
+
+| Item | Qty |
+|---|---|
+| 15" LCD Display | 1 |
+| M5 Plastic-Head Thumb Screws | 8 |
+
+### Procedure
+
+1. Pass the HDMI cable and the power cable (from Step 2.10) around the mounting plate and behind the vents, as shown below. Connect these to the screen.
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/screen_installation_1.png" width="500" class="center-img"/>
+
+2. Using the thumb screws, mount the screen to the 3D-printed brackets.
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/screen_installation_2.png" width="500" class="center-img"/>
+
+3. After this, the peripherals panel can be fastened to the mounting brackets using thumb screws.
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/screen_installation_3.png" width="500" class="center-img"/>
+
+---
+
+## Step 8: Assembly with robot base
+
+The base shown in these steps was built using the [vinerobots.org](https://www.vinerobots.org/) base construction steps. A few modifications have been made, but the overall shape and functionality are identical to the one on the Vine Robots website.
+
+List of changes:
+- The reel has been modified to include heat-set inserts, so the acrylic plates can be fastened into the 3D-printed reel core instead of hot-glued.
+- The reel core has been modified to feature a shallow concave groove designed to passively guide the tendon toward the center of the spool during winding.
+- As a safety precaution, 1/2" thick acrylic plates are secured with threaded rods to the sides of the base. This ensures the rubber ends do not come off due to over-pressurization or faulty hose clamp installation.
+- We added a shoulder strap and carrying handles to facilitate base carrying.
+
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/base_changes.png" width="500" class="center-img"/>
+
+### Procedure
+
+To finish the assembly, we will mount the compute box in the robot base.
+
+1. Print a second set of the curved foot assembly and place them on the floor, and pass velcro or ratchet straps on the foot assembly orifices.
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/robot_base_1.png" width="500" class="center-img"/>
+
+2. Sit the cylindrical robot body on top of these.
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/robot_base_2.png" width="500" class="center-img"/>
+
+3. Then, place the compute box on top of the robot.
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/robot_base_3.png" width="500" class="center-img"/>
+
+4. Tighten the straps to secure the compute box around the cylindrical robot body. Connect the compute box to the vine robot base using the 6-pin receptacle, then attach a battery.
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/robot_base_4.png" width="500" class="center-img"/>
+
+5. Finally, install a vine in the reel. Connect the robot base to the pneumatic outputs. The 1/2" push-to-connect provides pressure to the main connector of the robot base; the 3x 1/4" push-to-connect fittings provide pressure to the robot body pouch motor lines. The quick-disconnect connector is the main pressurized air inlet, to be connected to a compressor or pressurized air tank.
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/final_assembly_2.png" width="500" class="center-img"/>
+
+6. Attach a joystick to the compute box, and the system assembly is complete!
+<img src="{{ site.github_raw }}/SPROUT_Design/Documentation/Images/Assembly/final_assembly.png" width="500" class="center-img"/>
+
+See [Vine Construction]({{ site.baseurl }}/documentation/vine-construction.html) for building the vine itself.
+
+---
+
+## Step 9: Final inspection
+
+Verify:
+
+- all hardware is secured
+- all connectors are fully seated
+- all wiring is strain relieved
+- no loose hardware remains
+- the enclosure lid closes without interference
+
+---
+
+## Next steps
+
+Proceed to [Software Setup]({{ site.baseurl }}/software/) to flash and configure the Jetson, then run through validation testing before field deployment.

@@ -29,7 +29,7 @@ of the Jetson.
 
 Follow the [official instructions available from NVIDIA](https://www.jetson-ai-lab.com/initial_setup_jon.html). We recommend using the instructions in the *Alternative method: SDK Manager* section.
 
-We suggest using JetPack 6.1.X. The host computer which performs the flashing of the Jetson will need to be an Ubuntu 20/22 device.
+We suggest using JetPack 6.1.X. The host computer used to flash the Jetson must run Ubuntu 20/22.
 
 After flashing, boot the device, and proceed to set up a user name and password. We recommend naming the device `jetson`. For ease of use, we recommend setting the device to auto-login. Do not install the Chromium browser.
 

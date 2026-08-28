@@ -11,7 +11,7 @@ nav_order: 2
 Source: [`SPROUT_Design/CAD/sprout_new_base_cad`]({{ site.github_tree }}/SPROUT_Design/CAD/sprout_new_base_cad)
 {: .label .label-green }
 
-A companion CAD set of the compute box paired with the current robot base
+A companion CAD set for the compute box paired with the current robot base
 revision. It largely mirrors [New Compute Box]({{ site.baseurl }}/cad/new-compute-box.html) with
 updated fitting part numbers and part revisions for the base assembly.
 

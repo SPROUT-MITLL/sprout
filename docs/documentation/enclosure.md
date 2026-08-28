@@ -167,7 +167,7 @@ operation.
 
 *Figure 6. External robot mounting brackets and support feet assembly.*
 
-First, 3D-print the primary bracket mounts (4), install M5 heat-inserts, and
+First, 3D-print the primary bracket mounts (4), install M5 heat-set inserts, and
 epoxy them to the bottom of the case.
 
 ![Primary brackets epoxied to the bottom of the case.]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/robot_mount_part_1.png)

@@ -62,6 +62,7 @@ Major subsystems include:
 | [Enclosure]({{ site.baseurl }}/documentation/enclosure.html) | Enclosure preparation and mounting layout |
 | [Assembly]({{ site.baseurl }}/documentation/assembly.html) | Step-by-step assembly procedure |
 | [Wiring]({{ site.baseurl }}/documentation/wiring.html) | Wiring harnesses and connector pinouts |
+| [Vine Construction]({{ site.baseurl }}/documentation/vine-construction.html) | Building the vine robot body *(work in progress)* |
 
 ---
 

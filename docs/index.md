@@ -27,7 +27,7 @@ field-deployable compute box that handles onboard computation, power
 regulation, actuator control, sensing, and networking.
 
 Everything needed to build your own SPROUT — mechanical CAD, PCB designs, bills
-of materials, assembly instructions, and the full software/ROS2 stack — is
+of materials, assembly instructions, and the full software/ROS 2 stack — is
 released here under the MIT license.
 
 ## Site Map
