@@ -1,0 +1,9 @@
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+Gemfile.lock
+
+# Local-only symlink used by _config_dev.yml to render images from disk.
+/SPROUT_Design

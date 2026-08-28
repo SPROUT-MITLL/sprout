@@ -1,0 +1,18 @@
+// SPROUT brand color scheme, based on the logo (dark green, light green, white).
+// Imported by the theme after color_schemes/light.scss, so these plain
+// assignments (no !default) override the light-theme defaults.
+
+$body-heading-color: #2a7639;
+$link-color: #2a7639;
+$nav-child-link-color: #2a7639;
+$sidebar-color: #eaf5ec;
+$base-button-color: #eaf5ec;
+$btn-primary-color: #3db349;
+$body-background-color: $white;
+$code-background-color: $white;
+$table-background-color: $white;
+$search-background-color: $white;
+$search-result-preview-color: $grey-dk-100;
+
+// Recomputed because light.scss already resolved this from the old $sidebar-color.
+$feedback-color: darken($sidebar-color, 3%);

@@ -1,0 +1,98 @@
+# Site + theme configuration for the SPROUT documentation site.
+# Built with "Just the Docs" (https://just-the-docs.com) and deployed to
+# GitHub Pages via the workflow in .github/workflows/pages.yml.
+
+title: SPROUT
+description: >-
+  SPROUT is an open-source, open-hardware soft robot platform for search and
+  rescue. This site documents the mechanical, electrical, and software design
+  released alongside the project.
+tagline: Open-source, open-hardware soft robot for search & rescue
+
+theme: just-the-docs
+
+# GitHub Pages project-site config: https://sprout-mitll.github.io/sprout/
+url: "https://sprout-mitll.github.io"
+baseurl: "/sprout"
+
+repository: SPROUT-MITLL/sprout
+
+# Base URL used throughout the docs to link directly to files/folders that live
+# in SPROUT_Design/ (CAD, photos, etc.) which are not copied into this site.
+github_raw: https://raw.githubusercontent.com/SPROUT-MITLL/sprout/main
+github_blob: https://github.com/SPROUT-MITLL/sprout/blob/main
+github_tree: https://github.com/SPROUT-MITLL/sprout/tree/main
+
+logo: "/assets/images/logo.png"
+favicon_ico: "/assets/images/logo_s.png"
+
+color_scheme: green
+
+callouts:
+  warning:
+    title: Warning
+    color: red
+  important:
+    title: Important
+    color: blue
+  note:
+    title: Note
+    color: green
+
+search_enabled: true
+search:
+  heading_level: 2
+  previews: 2
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "Back to top"
+
+nav_sort: case_insensitive
+nav_external_links:
+  - title: SPROUT on GitHub
+    url: https://github.com/SPROUT-MITLL/sprout
+    hide_icon: false
+
+aux_links:
+  "SPROUT on GitHub":
+    - "https://github.com/SPROUT-MITLL/sprout"
+aux_links_new_tab: true
+
+footer_content: >-
+  Copyright &copy; 2026 Massachusetts Institute of Technology. Distributed
+  under an <a
+  href="https://github.com/SPROUT-MITLL/sprout/blob/main/LICENSE">MIT
+  license</a>.
+
+gh_edit_link: true
+gh_edit_link_text: "Edit this page on GitHub"
+gh_edit_repository: "https://github.com/SPROUT-MITLL/sprout"
+gh_edit_branch: "main"
+gh_edit_source: docs
+gh_edit_view_mode: "tree"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-include-cache
+
+# Safety net: any page missing an explicit `layout:` in its front matter still
+# gets wrapped in the theme's default (nav + sidebar) layout.
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - node_modules
