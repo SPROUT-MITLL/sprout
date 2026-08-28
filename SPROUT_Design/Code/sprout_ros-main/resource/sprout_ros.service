@@ -1,0 +1,18 @@
+[Unit]
+After=network.target
+Description=SPROUT ROS2 boot service
+ConditionPathExists=/dev/com/vine_arduino
+
+[Service]
+User=jetson
+Group=jetson
+ExecStart="/home/jetson/ws/src/sprout_ros/resource/start_sprout.sh"
+WorkingDirectory=/home/jetson/ws
+Environment=PYTHONUNBUFFERED=1
+Restart=on-failure
+RestartSec=20s
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

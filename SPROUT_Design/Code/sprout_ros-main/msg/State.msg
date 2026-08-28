@@ -1,0 +1,12 @@
+float32 cp_s
+float32 a1_s
+float32 a2_s
+float32 a3_s
+float32 cp_a
+float32 a1_a
+float32 a2_a
+float32 a3_a
+float32 d_s
+float32 d_c
+float32 c_m
+float32 a_m
