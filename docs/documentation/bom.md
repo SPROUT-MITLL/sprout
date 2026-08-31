@@ -8,9 +8,6 @@ nav_order: 1
 # Bill of Materials (BOM)
 {: .no_toc }
 
-Source: [`SPROUT_Design/Documentation/bom.md`]({{ site.github_blob }}/SPROUT_Design/Documentation/bom.md)
-{: .label .label-green }
-
 This page lists the primary hardware components required to assemble the
 compute box for the SPROUT platform.
 

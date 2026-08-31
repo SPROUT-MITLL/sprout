@@ -8,9 +8,6 @@ nav_order: 3
 # Compute Box Assembly
 {: .no_toc }
 
-Source: [`SPROUT_Design/Documentation/assembly.md`]({{ site.github_blob }}/SPROUT_Design/Documentation/assembly.md)
-{: .label .label-green }
-
 <style>
   .center-img {
     display: block;

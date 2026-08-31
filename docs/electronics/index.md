@@ -47,6 +47,12 @@ and breaks out the following interfaces referenced throughout the
 
 <script type="module" src="{{ site.baseurl }}/assets/js/step-viewer.js"></script>
 
+### Board layout
+
+![Arduino shield PCB layout]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Electronics/arduino_shield_schematic.jpg)
+
+*Figure 1. PCB layout showing traces and connector pinouts for the actuator, solenoid, motor driver, power, encoder, and joystick headers referenced in the [wiring guide]({{ site.baseurl }}/documentation/wiring.html).*
+
 | File | Description |
 |---|---|
 | [`vine_robot_arduino_shield.kicad_sch`]({{ site.github_blob }}/SPROUT_Design/Electronics/Arduino%20Shield/vine_robot_arduino_shield.kicad_sch) | KiCad schematic |

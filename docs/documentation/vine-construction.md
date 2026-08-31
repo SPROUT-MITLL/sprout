@@ -8,9 +8,6 @@ nav_order: 5
 # Vine Robot Body Fabrication
 {: .no_toc }
 
-Source: [`SPROUT_Design/Documentation/vine.md`]({{ site.github_blob }}/SPROUT_Design/Documentation/vine.md)
-{: .label .label-green }
-
 <style>
   .center-img {
     display: block;

@@ -36,7 +36,7 @@ This site mirrors the folder structure of the [`SPROUT_Design`]({{ site.github_t
 
 | Section | What's inside | Source folder |
 |---|---|---|
-| [Documentation]({{ site.baseurl }}/documentation/) | Bill of materials, enclosure prep, assembly, and wiring guides for the compute box | [`SPROUT_Design/Documentation`]({{ site.github_tree }}/SPROUT_Design/Documentation) |
+| [Documentation]({{ site.baseurl }}/documentation/) | Bill of materials, enclosure prep, assembly, and wiring guides for the compute box | [`SPROUT_Design/Documentation`]({{ site.github_tree }}/SPROUT_Design/Documentation) (photos and BOM spreadsheet only — guides are authored directly on this site) |
 | [CAD]({{ site.baseurl }}/cad/) | SolidWorks/STEP models for the compute box and robot base | [`SPROUT_Design/CAD`]({{ site.github_tree }}/SPROUT_Design/CAD) |
 | [Electronics]({{ site.baseurl }}/electronics/) | Custom Arduino shield PCB (KiCad project, gerbers, schematics) | [`SPROUT_Design/Electronics`]({{ site.github_tree }}/SPROUT_Design/Electronics) |
 | [Software]({{ site.baseurl }}/software/) | Jetson bootstrap guide and the `sprout_ros` ROS 2 stack | [`SPROUT_Design/Code`]({{ site.github_tree }}/SPROUT_Design/Code) |

@@ -9,9 +9,6 @@ permalink: /documentation/
 # Documentation
 {: .no_toc }
 
-Source: [`SPROUT_Design/Documentation`]({{ site.github_tree }}/SPROUT_Design/Documentation)
-{: .label .label-green }
-
 ## Overview
 
 This section provides build documentation for SPROUT: The Open-Source Soft

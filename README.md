@@ -8,7 +8,7 @@ Main repository for SPROUT: an open-source, open-hardware soft robot for search 
 
 - [`SPROUT_Design/CAD`](SPROUT_Design/CAD) — SolidWorks/STEP mechanical design files
 - [`SPROUT_Design/Code`](SPROUT_Design/Code) — Jetson bootstrap guide and the `sprout_ros` ROS 2 stack
-- [`SPROUT_Design/Documentation`](SPROUT_Design/Documentation) — bill of materials, enclosure, assembly, and wiring guides
+- [`SPROUT_Design/Documentation`](SPROUT_Design/Documentation) — supporting photos and the raw BOM spreadsheet for the [Documentation](https://sprout-mitll.github.io/sprout/documentation/) section of the site
 - [`SPROUT_Design/Electronics`](SPROUT_Design/Electronics) — custom Arduino shield KiCad project
 - [`docs/`](docs) — source for the GitHub Pages documentation site above
 

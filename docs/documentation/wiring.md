@@ -8,9 +8,6 @@ nav_order: 4
 # Wiring
 {: .no_toc }
 
-Source: [`SPROUT_Design/Documentation/wiring.md`]({{ site.github_blob }}/SPROUT_Design/Documentation/wiring.md)
-{: .label .label-green }
-
 <style>
   .center-img {
     display: block;

@@ -8,9 +8,6 @@ nav_order: 2
 # Enclosure Preparation and Mounting Layout
 {: .no_toc }
 
-Source: [`SPROUT_Design/Documentation/enclosure.md`]({{ site.github_blob }}/SPROUT_Design/Documentation/enclosure.md)
-{: .label .label-green }
-
 This page describes the preparation and mounting layout of the compute box
 enclosure used in the SPROUT robotic platform. The enclosure integrates
 compute hardware, power electronics, communication interfaces, and
