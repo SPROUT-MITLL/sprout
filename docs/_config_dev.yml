@@ -10,13 +10,15 @@ github_raw: /sprout
 
 # _config.yml's `exclude` is fully replaced (not merged) by this list, so it
 # repeats those entries plus the heavy folders we don't need to serve locally.
+# Note: CAD and Electronics are NOT excluded here (unlike production docs)
+# because the 3D STEP-file previews need to fetch real .step files from disk
+# locally; an `include:` override doesn't work because Jekyll prunes excluded
+# directories before checking include patterns against their contents.
 exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
   - node_modules
-  - SPROUT_Design/CAD
   - SPROUT_Design/Documentation/Photos
   - SPROUT_Design/Documentation/Vine Photos
   - SPROUT_Design/Code/sprout_ros-main
-  - SPROUT_Design/Electronics

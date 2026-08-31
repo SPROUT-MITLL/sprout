@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Assembly
+title: Compute Box
 parent: Documentation
 nav_order: 3
 ---

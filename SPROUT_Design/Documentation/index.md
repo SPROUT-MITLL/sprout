@@ -1,15 +1,10 @@
-# Compute Box Documentation
+# Documentation
 
 ## Overview
-This document provides assembly, wiring, software setup, and validation instructions for the compute box used in SPROUT: The Open-Source Soft Robot for Search and Rescue.
+This document provides build documentation for SPROUT: The Open-Source Soft Robot for Search and Rescue, covering two subsystems:
 
-The compute box integrates:
-- onboard computation,
-- power regulation,
-- actuator control,
-- sensing interfaces,
-- networking,
-- embedded communication hardware.
+- **Compute box** — onboard computation, power regulation, actuator control, sensing interfaces, networking, and embedded communication hardware. See `bom.md`, `enclosure.md`, `assembly.md`, and `wiring.md`.
+- **Vine robot body** — the soft, pneumatically-actuated "vine" that everts from the base and is driven by the compute box. See `vine.md`.
 
 The system is designed for:
 - field deployment,
@@ -20,7 +15,21 @@ The system is designed for:
 
 ---
 
-## System Architecture
+## Documentation Map
+
+| Section | Description |
+|---|---|
+| `bom.md` | Bill of materials and sourcing |
+| `enclosure.md` | Enclosure preparation and mounting layout |
+| `assembly.md` | Step-by-step assembly procedure |
+| `wiring.md` | Wiring harnesses and connector pinouts |
+| `vine.md` | Fabricating the vine robot body |
+
+---
+
+## Compute Box
+
+### System Architecture
 
 ![System Architecture](Images/system_architecture_ssrr_large.jpg)
 
@@ -37,23 +46,7 @@ Major subsystems include:
 - Control Peripherals
 - Vine Base
 
----
-
-## Documentation Map
-
-| Section | Description |
-|---|---|
-| `bom.md` | Bill of materials and sourcing |
-| `enclosure.md` | Enclosure preparation and mounting layout |
-| `wiring.md` | Wiring harnesses and connector pinouts |
-| `compute.md` | Compute hardware installation and interfaces |
-| `assembly.md` | Step-by-step assembly procedure |
-| `troubleshooting.md` | Hardware diagnostics and common failures |
-| `robot.md` | Robot manufacturing instructions | 
-
----
-
-## Compute Hardware
+### Compute Hardware
 
 Current compute hardware includes:
 
@@ -64,9 +57,7 @@ Current compute hardware includes:
 | DC-DC regulators | Power conversion |
 | Motor drivers | Actuator control |
 
----
-
-## Power Architecture
+### Power Architecture
 
 The compute box operates from an external DC battery source.
 
@@ -77,18 +68,14 @@ Primary voltage rails:
 
 All rails are fused independently.
 
----
-
-## Communication Architecture
+### Communication Architecture
 
 The system currently uses:
 - USB serial communication
 - Ethernet 
 - WiFi
 
----
-
-## Assembly Workflow
+### Assembly Workflow
 
 Recommended assembly order:
 
@@ -100,9 +87,7 @@ Recommended assembly order:
 6. Software flashing/setup
 7. Validation testing
 
----
-
-## Safety
+### Safety
 
 > Disconnect all power before servicing the compute box.
 
@@ -112,22 +97,27 @@ Recommended assembly order:
 
 ---
 
+## Vine Robot Body
+
+The vine body is a soft, pneumatically-actuated structure fabricated from heat-sealable TPU-coated fabric — see `vine.md` for the full fabrication procedure, materials, and inspection/test steps.
+
+> Overheating the impulse sealer during fabrication can ruin hours of work in seconds; underheating can produce a body that bursts at low actuation pressures.
+
+---
+
 ## Repository Structure
 
 ```text
-sprout/
-├── index.md
-├── bom.md
-├── enclosure.md
-├── assembly.md
-├── compute.md
-├── wiring.md
-├── troubleshooting.md
-├── robot.md
-├── figures/
-│   ├── assembly/
-│   ├── enclosure/
-│   ├── wiring/
-├── schematics/
-├── cad/
-└── datasheets/
+SPROUT_Design/
+├── CAD/
+├── Code/
+├── Documentation/
+│   ├── index.md
+│   ├── bom.md
+│   ├── enclosure.md
+│   ├── assembly.md
+│   ├── wiring.md
+│   ├── vine.md
+│   └── Images/
+└── Electronics/
+```

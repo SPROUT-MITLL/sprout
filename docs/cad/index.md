@@ -19,8 +19,8 @@ or clone the repository to open them locally.
 
 | Folder | Description |
 |---|---|
-| [New Compute Box]({{ site.baseurl }}/cad/new-compute-box.html) | Full compute box design: enclosure mounts, electropneumatic hardware, power electronics, connectors, and robot-base interface |
-| [New Base CAD]({{ site.baseurl }}/cad/new-base-cad.html) | Companion CAD set for the robot base revision paired with the compute box |
+| [Compute Box]({{ site.baseurl }}/cad/new-compute-box.html) | Full compute box design: enclosure mounts, electropneumatic hardware, power electronics, connectors, and robot-base interface |
+| [Base CAD]({{ site.baseurl }}/cad/new-base-cad.html) | Robot base design: the motorized reel mechanism that houses, drives, and everts the vine body |
 
 ## Working with these files
 

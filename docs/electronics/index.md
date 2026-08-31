@@ -40,6 +40,13 @@ and breaks out the following interfaces referenced throughout the
 - QB3 pressure regulator channels (Chamber, Actuator 1–3)
 - I²C breakout for the LCD display
 
+### 3D preview
+
+{% assign step_url = site.github_raw | append: "/SPROUT_Design/Electronics/Arduino Shield/vine_robot_arduino_shield.step" %}
+{% include step_viewer.html url=step_url name="Arduino shield" %}
+
+<script type="module" src="{{ site.baseurl }}/assets/js/step-viewer.js"></script>
+
 | File | Description |
 |---|---|
 | [`vine_robot_arduino_shield.kicad_sch`]({{ site.github_blob }}/SPROUT_Design/Electronics/Arduino%20Shield/vine_robot_arduino_shield.kicad_sch) | KiCad schematic |
@@ -66,4 +73,4 @@ The shield is mounted alongside the Arduino Uno Rev3 in the compute box — see
 [Assembly → Step 3]({{ site.baseurl }}/documentation/assembly.html#step-3-install-compute-hardware)
 for installation and [Wiring]({{ site.baseurl }}/documentation/wiring.html) for the full
 connector pinout. CAD for the shield's mechanical footprint and mounting is
-included in [CAD → New Compute Box]({{ site.baseurl }}/cad/new-compute-box.html).
+included in [CAD → Compute Box]({{ site.baseurl }}/cad/new-compute-box.html).

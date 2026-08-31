@@ -44,7 +44,7 @@ compute hardware, power electronics, and electropneumatics.
 ## Provided CAD files
 
 STL files and CAD assemblies for all mounting components are provided in
-[CAD → New Compute Box]({{ site.baseurl }}/cad/new-compute-box.html).
+[CAD → Compute Box]({{ site.baseurl }}/cad/new-compute-box.html).
 
 ---
 
@@ -218,4 +218,4 @@ below.
 
 ![Installed screen brackets.]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/Enclosure/screen_mounting_2.jpg)
 
-Next: continue with [Assembly]({{ site.baseurl }}/documentation/assembly.html).
+Next: continue with the [Compute Box]({{ site.baseurl }}/documentation/assembly.html).
