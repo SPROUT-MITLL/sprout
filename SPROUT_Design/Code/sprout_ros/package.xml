@@ -3,7 +3,7 @@
 <package format="3">
   <name>sprout_ros</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>SPROUT vine robot control stack</description>
   <maintainer email="nathaniel.hanson@ll.mit.edu">jetson</maintainer>
   <license>MIT</license>
   <buildtool_depend>ament_cmake</buildtool_depend>
