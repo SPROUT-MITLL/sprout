@@ -58,7 +58,7 @@ A paper describing SPROUT is planned for release on [arXiv](https://arxiv.org/).
 ```bibtex
 @misc{sprout2026,
   title         = {SPROUT: An Open-Source, Open-Hardware Soft Robot for Search and Rescue},
-  author        = {TODO: Author List},
+  author        = {Antonio Alvarez Valdivia, Ciera McFarland, Robert Reeve, Ankush Dhawan, Chad Council, Megan Richardson, Margaret McGuinness, and Nathaniel Hanson},
   year          = {2026},
   eprint        = {TODO: arXiv ID},
   archivePrefix = {arXiv},
