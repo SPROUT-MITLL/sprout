@@ -18,9 +18,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 install(
   PROGRAMS
     scripts/joy_vine_interface.py
-    scripts/LCD2004.py
     scripts/screen.py
-    scripts/tip_cam.py
     scripts/fort_controller.py
     scripts/fort_vine_interface.py
     scripts/fort_scm_controller.py

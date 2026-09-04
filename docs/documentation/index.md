@@ -52,7 +52,7 @@ The system is designed for:
 
 ### System architecture
 
-![System Architecture]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/system_architecture_ssrr_large.jpg)
+![System Architecture]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/system_architecture_RAP_v2.png)
 
 The compute stack coordinates communication between:
 - embedded microcontrollers

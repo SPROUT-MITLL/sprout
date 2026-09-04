@@ -18,4 +18,4 @@ software stack online: a bootstrap guide for the onboard NVIDIA Jetson, and
 
 ## Reference architecture
 
-![System Architecture]({{ site.github_raw }}/SPROUT_Design/Code/compute_setup/img/system_architecture.png)
+![System Architecture]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/system_architecture_RAP_v2.png)

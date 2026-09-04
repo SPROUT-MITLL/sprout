@@ -8,7 +8,7 @@ nav_order: 2
 # SPROUT ROS
 {: .no_toc }
 
-Source: [`SPROUT_Design/Code/sprout_ros-main`]({{ site.github_tree }}/SPROUT_Design/Code/sprout_ros-main)
+Source: [`SPROUT_Design/Code/sprout_ros`]({{ site.github_tree }}/SPROUT_Design/Code/sprout_ros)
 {: .label .label-green }
 
 ROS 2 stack for SPROUT. Main installation instructions live in the [Jetson Bootstrap]({{ site.baseurl }}/software/jetson-bootstrap.html) guide; this page summarizes the package layout.
@@ -27,12 +27,12 @@ The `sprout_ros` package (`ament_cmake`, ROS 2) is organized as follows:
 
 | Path | Contents |
 |---|---|
-| [`arduino/vine_control_mitll`]({{ site.github_tree }}/SPROUT_Design/Code/sprout_ros-main/arduino/vine_control_mitll) | `vine_control_uno_rev3` Arduino sketch that runs on the Uno Rev3 and talks to the shield hardware |
-| [`launch/system_bringup.py`]({{ site.github_blob }}/SPROUT_Design/Code/sprout_ros-main/launch/system_bringup.py) | Top-level launch file that brings up the Fort controller, Arduino interface, and LCD screen nodes |
-| [`msg/`]({{ site.github_tree }}/SPROUT_Design/Code/sprout_ros-main/msg) | `Command.msg` and `State.msg` message definitions |
-| [`scripts/`]({{ site.github_tree }}/SPROUT_Design/Code/sprout_ros-main/scripts) | ROS 2 node implementations (controller drivers, vine interface, display, camera) |
-| [`srv/`]({{ site.github_tree }}/SPROUT_Design/Code/sprout_ros-main/srv) | `PressureSet.srv` service definition |
-| [`resource/`]({{ site.github_tree }}/SPROUT_Design/Code/sprout_ros-main/resource) | systemd service unit for auto-starting the stack on boot |
+| [`arduino/vine_control`]({{ site.github_tree }}/SPROUT_Design/Code/sprout_ros/arduino/vine_control) | `vine_control_uno_rev3` Arduino sketch that runs on the Uno Rev3 and talks to the shield hardware |
+| [`launch/system_bringup.py`]({{ site.github_blob }}/SPROUT_Design/Code/sprout_ros/launch/system_bringup.py) | Top-level launch file that brings up the Fort controller, Arduino interface, and LCD screen nodes |
+| [`msg/`]({{ site.github_tree }}/SPROUT_Design/Code/sprout_ros/msg) | `Command.msg` and `State.msg` message definitions |
+| [`scripts/`]({{ site.github_tree }}/SPROUT_Design/Code/sprout_ros/scripts) | ROS 2 node implementations (controller drivers, vine interface, display, camera) |
+| [`srv/`]({{ site.github_tree }}/SPROUT_Design/Code/sprout_ros/srv) | `PressureSet.srv` service definition |
+| [`resource/`]({{ site.github_tree }}/SPROUT_Design/Code/sprout_ros/resource) | systemd service unit for auto-starting the stack on boot |
 
 ## Messages and services
 
@@ -81,13 +81,11 @@ string message
 
 | Script | Description |
 |---|---|
-| [`fort_controller.py`]({{ site.github_blob }}/SPROUT_Design/Code/sprout_ros-main/scripts/fort_controller.py) | Reads the Fort Robotics Wireless Controller (FRWC) HID device directly and publishes `sensor_msgs/Joy` |
-| [`fort_scm_controller.py`]({{ site.github_blob }}/SPROUT_Design/Code/sprout_ros-main/scripts/fort_scm_controller.py) | Publishes `Joy` messages using the `fort_scm` SCM protocol library for the Fort controller |
-| [`joy_vine_interface.py`]({{ site.github_blob }}/SPROUT_Design/Code/sprout_ros-main/scripts/joy_vine_interface.py) | Bridges `Joy` messages to the vine robot's Arduino over serial, publishing `sprout_ros/State` |
-| [`fort_vine_interface.py`]({{ site.github_blob }}/SPROUT_Design/Code/sprout_ros-main/scripts/fort_vine_interface.py) | Variant of the vine interface driver that also exposes the `PressureSet` service |
-| [`screen.py`]({{ site.github_blob }}/SPROUT_Design/Code/sprout_ros-main/scripts/screen.py) | Drives the onboard status LCD from `sprout_ros/State` |
-| [`LCD2004.py`]({{ site.github_blob }}/SPROUT_Design/Code/sprout_ros-main/scripts/LCD2004.py) | Low-level I²C driver for the 20x4 character LCD used by `screen.py` |
-| [`tip_cam.py`]({{ site.github_blob }}/SPROUT_Design/Code/sprout_ros-main/scripts/tip_cam.py) | Publishes an MJPEG IP camera stream (vine tip camera) as `sensor_msgs/Image` |
+| [`fort_controller.py`]({{ site.github_blob }}/SPROUT_Design/Code/sprout_ros/scripts/fort_controller.py) | Reads the Fort Robotics Wireless Controller (FRWC) HID device directly and publishes `sensor_msgs/Joy` |
+| [`fort_scm_controller.py`]({{ site.github_blob }}/SPROUT_Design/Code/sprout_ros/scripts/fort_scm_controller.py) | Publishes `Joy` messages using the `fort_scm` SCM protocol library for the Fort controller |
+| [`joy_vine_interface.py`]({{ site.github_blob }}/SPROUT_Design/Code/sprout_ros/scripts/joy_vine_interface.py) | Bridges `Joy` messages to the vine robot's Arduino over serial, publishing `sprout_ros/State` |
+| [`fort_vine_interface.py`]({{ site.github_blob }}/SPROUT_Design/Code/sprout_ros/scripts/fort_vine_interface.py) | Variant of the vine interface driver that also exposes the `PressureSet` service |
+| [`screen.py`]({{ site.github_blob }}/SPROUT_Design/Code/sprout_ros/scripts/screen.py) | Drives the onboard status LCD from `sprout_ros/State` |
 
 ## Bring-up
 
@@ -101,4 +99,4 @@ Node(package='sprout_ros', executable='screen.py', name='jetson_screen', output=
 
 ## Arduino firmware
 
-The `vine_control` sketch (`arduino/vine_control_mitll/vine_control/vine_control_uno_rev3`) runs on the Arduino Uno Rev3 mounted on the [custom shield]({{ site.baseurl }}/electronics/) and is flashed following the [Jetson Bootstrap]({{ site.baseurl }}/software/jetson-bootstrap.html#flash-arduino-with-code) guide.
+The `vine_control` sketch (`arduino/vine_control/vine_control/vine_control_uno_rev3`) runs on the Arduino Uno Rev3 mounted on the [custom shield]({{ site.baseurl }}/electronics/) and is flashed following the [Jetson Bootstrap]({{ site.baseurl }}/software/jetson-bootstrap.html#flash-arduino-with-code) guide.

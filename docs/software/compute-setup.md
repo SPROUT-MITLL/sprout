@@ -12,7 +12,7 @@ nav_order: 1
 Source: [`SPROUT_Design/Code/compute_setup`]({{ site.github_blob }}/SPROUT_Design/Code/compute_setup/README.md)
 {: .label .label-green }
 
-![System Architecture]({{ site.github_raw }}/SPROUT_Design/Code/compute_setup/img/system_architecture.png)
+![System Architecture]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/system_architecture_RAP_v2.png)
 
 Reference system architecture for the fully realized system.
 

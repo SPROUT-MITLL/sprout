@@ -21,4 +21,4 @@ exclude:
   - node_modules
   - SPROUT_Design/Documentation/Photos
   - SPROUT_Design/Documentation/Vine Photos
-  - SPROUT_Design/Code/sprout_ros-main
+  - SPROUT_Design/Code/sprout_ros

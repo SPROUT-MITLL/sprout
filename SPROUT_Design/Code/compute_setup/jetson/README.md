@@ -120,7 +120,7 @@ Allow the application to initialize and install necessary packages upon first sy
 
 Connect the Arduino to the Jetson via USB cable.
 
-Open the Arduino sketch: `~/ws/src/sprout_ros/arduino/vine_control_mitll/vine_control/vine_control_uno_rev3`
+Open the Arduino sketch: `~/ws/src/sprout_ros/arduino/vine_control/vine_control/vine_control_uno_rev3`
 
 Make sure the IDE is connected to the Arduino Uno on `/dev/ttyACM0`. Verify and upload the sketch to the device.
 

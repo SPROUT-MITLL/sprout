@@ -47,7 +47,6 @@ STEP files can be previewed directly in the browser. SolidWorks-only files (`.SL
 | File | Description |
 |---|---|
 | [`compute_box.SLDASM`]({{ site.github_blob }}/SPROUT_Design/CAD/compute_box/compute_box.SLDASM) / [`compute_box_assembly.SLDASM`]({{ site.github_blob }}/SPROUT_Design/CAD/compute_box/compute_box_assembly.SLDASM) | Top-level compute box assembly |
-| [`sprout_computer_subassembly.SLDASM`]({{ site.github_blob }}/SPROUT_Design/CAD/compute_box/sprout_computer_subassembly.SLDASM) | Compute box subassembly |
 | [`case.SLDASM`]({{ site.github_blob }}/SPROUT_Design/CAD/compute_box/case.SLDASM) / [`case_assembly.SLDASM`]({{ site.github_blob }}/SPROUT_Design/CAD/compute_box/case_assembly.SLDASM) | Enclosure case assembly |
 | [`jetson_subassembly.SLDASM`]({{ site.github_blob }}/SPROUT_Design/CAD/compute_box/jetson_subassembly.SLDASM) | Jetson computer + mounting housing subassembly |
 | [`feet_assembly.SLDASM`]({{ site.github_blob }}/SPROUT_Design/CAD/compute_box/feet_assembly.SLDASM) | External robot mounting foot assembly (see [Enclosure]({{ site.baseurl }}/documentation/enclosure.html#external-robot-mounting-system)) |

@@ -59,12 +59,11 @@ and breaks out the following interfaces referenced throughout the
 | [`vine_robot_arduino_shield.kicad_pcb`]({{ site.github_blob }}/SPROUT_Design/Electronics/Arduino%20Shield/vine_robot_arduino_shield.kicad_pcb) | KiCad PCB layout |
 | [`vine_robot_arduino_shield.kicad_pro`]({{ site.github_blob }}/SPROUT_Design/Electronics/Arduino%20Shield/vine_robot_arduino_shield.kicad_pro) | KiCad project file |
 | [`vine_robot_arduino_shield.step`]({{ site.github_blob }}/SPROUT_Design/Electronics/Arduino%20Shield/vine_robot_arduino_shield.step) | 3D STEP model of the assembled board |
-| [`v2_gerbers_8_23/`]({{ site.github_tree }}/SPROUT_Design/Electronics/Arduino%20Shield/v2_gerbers_8_23) | Fabrication-ready Gerber/drill files (rev. 8/23) |
-| [`v2_gerbers_8_23_2/`]({{ site.github_tree }}/SPROUT_Design/Electronics/Arduino%20Shield/v2_gerbers_8_23_2) | Follow-up Gerber/drill export (rev. 8/23, v2) |
+| [`v2_gerbers_8_23_2/`]({{ site.github_tree }}/SPROUT_Design/Electronics/Arduino%20Shield/v2_gerbers_8_23_2) | Fabrication-ready Gerber/drill files (rev. 8/23, v2) |
 | [`Arduino_MountingHole.pretty/`]({{ site.github_tree }}/SPROUT_Design/Electronics/Arduino%20Shield/Arduino_MountingHole.pretty) | Custom KiCad footprint library: standard Arduino mounting holes |
 | [`Arduino_MountingHole_3.2mm.pretty/`]({{ site.github_tree }}/SPROUT_Design/Electronics/Arduino%20Shield/Arduino_MountingHole_3.2mm.pretty) | Custom KiCad footprint library: 3.2 mm mounting holes |
 
-To fabricate a board, download the contents of a `v2_gerbers_8_23*` folder (or
+To fabricate a board, download the contents of the `v2_gerbers_8_23_2` folder (or
 the corresponding `.zip`) and submit it directly to your PCB manufacturer of
 choice.
 
