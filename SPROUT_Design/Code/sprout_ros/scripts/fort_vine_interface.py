@@ -13,7 +13,7 @@ import serial.serialutil
 
 
 # Vine Robot Driver
-# Author: Nathaniel Hanson
+# Author: [redacted for double-blind review]
 # ROS 2 Version
 
 class VineDriver(Node):

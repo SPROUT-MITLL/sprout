@@ -549,7 +549,7 @@
       "plot": "v2_gerbers_8_23_2",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "../../../../../OneDrive - MIT Lincoln Laboratory/Documents/sprout/sprout_base_cad/compute_box/vine_robot_arduino_shield.step",
+      "step": "",
       "svg": "pcb_fritz",
       "vrml": ""
     },

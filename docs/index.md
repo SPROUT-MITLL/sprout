@@ -7,9 +7,9 @@ permalink: /
 
 {: .fs-9 }
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-bottom: 1.5rem;">
+<!-- <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-bottom: 1.5rem;">
   <iframe src="https://www.youtube.com/embed/DaMCTH4qZTE" title="SPROUT overview video" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+</div> -->
 
 <i>An open-source, open-hardware soft robot platform for search and rescue and confined space operations.</i>
 {: .fs-6 .fw-300 }
@@ -58,7 +58,10 @@ A paper describing SPROUT is planned for release on [arXiv](https://arxiv.org/).
 ```bibtex
 @misc{sprout2026,
   title         = {SPROUT: An Open-Source, Open-Hardware Soft Robot for Search and Rescue},
+{% comment %}
   author        = {Antonio Alvarez Valdivia, Ciera McFarland, Robert Reeve, Ankush Dhawan, Chad Council, Megan Richardson, Margaret McGuinness, and Nathaniel Hanson},
+{% endcomment %}
+  author        = {Authors withheld for double-blind review},
   year          = {2026},
   eprint        = {TODO: arXiv ID},
   archivePrefix = {arXiv},
@@ -75,6 +78,9 @@ SPROUT is released under the [MIT License]({{ site.github_blob }}/LICENSE).
 
 ## Team
 
+> Team and affiliation information withheld for double-blind review.
+
+{% comment %}
 <style>
   .team-grid {
     display: flex;
@@ -156,12 +162,14 @@ SPROUT is released under the [MIT License]({{ site.github_blob }}/LICENSE).
   <a href="https://www.ll.mit.edu" target="_blank" rel="noopener"><img src="{{ site.baseurl }}/assets/images/mit-ll.png" alt="MIT Lincoln Laboratory" height="60"></a>
 </div>
 <p style="text-align: center; font-size: 0.85rem; color: #5c5962; margin-bottom: 2rem;">A joint project of the University of Notre Dame and MIT Lincoln Laboratory.</p>
+{% endcomment %}
 
 ## Distribution Statement
 
 DISTRIBUTION STATEMENT A. Approved for public release. Distribution is unlimited.
 This material is based upon work supported by the Department of the Air Force under Air Force Contract No. FA8702-15-D-0001 or FA8702-25-D-B002. Any opinions, findings, conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the Department of the Air Force.
-© 2026 Massachusetts Institute of Technology.
+{% comment %}© 2026 Massachusetts Institute of Technology.{% endcomment %}
+© 2026 [Institution redacted for double-blind review].
 
 Subject to FAR52.227-11 Patent Rights - Ownership by the contractor (May 2014)
 Delivered to the U.S. Government with Unlimited Rights, as defined in DFARS Part 252.227-7013 or 7014 (Feb 2014). Notwithstanding any copyright notice, U.S. Government rights in this work are defined by DFARS 252.227-7013 or DFARS 252.227-7014 as detailed above. Use of this work other than as specifically authorized by the U.S. Government may violate any copyrights that exist in this work.

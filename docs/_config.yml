@@ -65,7 +65,8 @@ aux_links:
 aux_links_new_tab: true
 
 footer_content: >-
-  Copyright &copy; 2026 Massachusetts Institute of Technology. Distributed
+  <!-- Copyright &copy; 2026 Massachusetts Institute of Technology. -->
+  Copyright &copy; 2026 [Institution redacted for double-blind review]. Distributed
   under an <a
   href="https://github.com/SPROUT-MITLL/sprout/blob/main/LICENSE">MIT
   license</a>.
