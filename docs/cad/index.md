@@ -30,7 +30,7 @@ details on GitHub or clone the repository to open them locally.
 
 The full SPROUT assembly (compute box + robot base) can be previewed directly in the browser.
 
-{% assign step_url = site.github_raw | append: "/SPROUT_Design/CAD/STEP/SPROUT_assembly.STEP" %}
+{% assign step_url = site.github_raw | append: "/SPROUT_Design/CAD/SPROUT_assembly_exterior.stl" %}
 {% include step_viewer.html url=step_url name="SPROUT assembly" %}
 
 <script type="module" src="{{ site.baseurl }}/assets/js/step-viewer.js"></script>

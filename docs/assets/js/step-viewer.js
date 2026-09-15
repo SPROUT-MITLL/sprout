@@ -1,12 +1,13 @@
 ---
 layout: null
 ---
-// Click-to-load 3D preview for STEP files, used on the CAD pages.
-// Parses STEP geometry client-side with occt-import-js (OpenCascade/WASM)
-// and renders it with three.js + OrbitControls.
+// Click-to-load 3D preview for STEP/STL files, used on the CAD pages.
+// STEP geometry is parsed client-side with occt-import-js (OpenCascade/WASM);
+// STL geometry is parsed with three.js's STLLoader. Both render with three.js + OrbitControls.
 
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { STLLoader } from 'three/addons/loaders/STLLoader.js';
 
 const OCCT_JS_URL = '{{ site.baseurl }}/assets/vendor/occt-import-js/occt-import-js.js';
 
@@ -49,6 +50,20 @@ function buildModelGroup(occtResult) {
   return group;
 }
 
+function buildModelGroupFromGeometry(geometry) {
+  const group = new THREE.Group();
+  if (!geometry.attributes.normal) {
+    geometry.computeVertexNormals();
+  }
+  const material = new THREE.MeshStandardMaterial({ color: 0x9aa5b1, metalness: 0.1, roughness: 0.7, side: THREE.DoubleSide });
+  group.add(new THREE.Mesh(geometry, material));
+  return group;
+}
+
+function isStlUrl(url) {
+  return /\.stl$/i.test(url);
+}
+
 function frameCamera(object, camera, controls) {
   const box = new THREE.Box3().setFromObject(object);
   const size = box.getSize(new THREE.Vector3());
@@ -63,7 +78,7 @@ function frameCamera(object, camera, controls) {
   controls.update();
 }
 
-function renderModel(container, occtResult) {
+function renderModel(container, model) {
   const canvasHolder = container.querySelector('.step-viewer-canvas');
   const width = canvasHolder.clientWidth;
   const height = canvasHolder.clientHeight || 400;
@@ -83,7 +98,6 @@ function renderModel(container, occtResult) {
   dirLight.position.set(1, 2, 3);
   scene.add(dirLight);
 
-  const model = buildModelGroup(occtResult);
   scene.add(model);
 
   const controls = new OrbitControls(camera, renderer.domElement);
@@ -107,6 +121,28 @@ function renderModel(container, occtResult) {
   animate();
 }
 
+async function loadModelGroup(url) {
+  if (isStlUrl(url)) {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error('Could not download the STL file (HTTP ' + response.status + ').');
+    }
+    const geometry = new STLLoader().parse(await response.arrayBuffer());
+    return buildModelGroupFromGeometry(geometry);
+  }
+
+  const [occtFactory, response] = await Promise.all([loadOcctModule(), fetch(url)]);
+  if (!response.ok) {
+    throw new Error('Could not download the STEP file (HTTP ' + response.status + ').');
+  }
+  const buffer = new Uint8Array(await response.arrayBuffer());
+  const result = occtFactory.ReadStepFile(buffer, null);
+  if (!result.success) {
+    throw new Error('The STEP parser could not read this file.');
+  }
+  return buildModelGroup(result);
+}
+
 function initStepViewer(container) {
   const url = container.dataset.stepUrl;
   const button = container.querySelector('.step-viewer-load');
@@ -116,23 +152,16 @@ function initStepViewer(container) {
   button.addEventListener('click', async () => {
     button.disabled = true;
     status.hidden = false;
-    status.textContent = 'Downloading and parsing STEP file (this can take a few seconds)…';
+    status.textContent = isStlUrl(url)
+      ? 'Downloading and parsing STL file…'
+      : 'Downloading and parsing STEP file (this can take a few seconds)…';
 
     try {
-      const [occtFactory, response] = await Promise.all([loadOcctModule(), fetch(url)]);
-      if (!response.ok) {
-        throw new Error('Could not download the STEP file (HTTP ' + response.status + ').');
-      }
-      const buffer = new Uint8Array(await response.arrayBuffer());
-      const result = occtFactory.ReadStepFile(buffer, null);
-      if (!result.success) {
-        throw new Error('The STEP parser could not read this file.');
-      }
-
+      const model = await loadModelGroup(url);
       button.remove();
       status.hidden = true;
       canvasHolder.hidden = false;
-      renderModel(container, result);
+      renderModel(container, model);
     } catch (err) {
       status.textContent = 'Could not load 3D preview: ' + err.message;
       button.disabled = false;
