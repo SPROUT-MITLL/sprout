@@ -25,23 +25,6 @@ power electronics, connectors, and the robot-base interface. See
 
 ---
 
-## 3D previews
-
-STEP files can be previewed directly in the browser. SolidWorks-only files (`.SLDPRT`/`.SLDASM`) don't have an open format to preview and must be downloaded.
-
-{% assign step_url = site.github_raw | append: "/SPROUT_Design/CAD/compute_box/vine_robot_arduino_shield.step" %}
-{% include step_viewer.html url=step_url name="Arduino shield" %}
-
-{% assign step_url = site.github_raw | append: "/SPROUT_Design/CAD/compute_box/xl6009_DCDC_BoostBuck.step" %}
-{% include step_viewer.html url=step_url name="Buck/boost converter" %}
-
-{% assign step_url = site.github_raw | append: "/SPROUT_Design/CAD/compute_box/QB3-3D.STEP" %}
-{% include step_viewer.html url=step_url name="QB3 pressure regulator" %}
-
-<script type="module" src="{{ site.baseurl }}/assets/js/step-viewer.js"></script>
-
----
-
 ## Top-level assemblies
 
 | File | Description |

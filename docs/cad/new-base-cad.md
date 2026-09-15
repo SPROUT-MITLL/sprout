@@ -27,17 +27,6 @@ to this base.
 
 ---
 
-## 3D previews
-
-STEP files can be previewed directly in the browser. SolidWorks-only files (`.SLDPRT`/`.SLDASM`) must be downloaded.
-
-{% assign step_url = site.github_raw | append: "/SPROUT_Design/CAD/sprout_base/1314-0016-0250 assembly.STEP" %}
-{% include step_viewer.html url=step_url name="Gearmotor assembly" %}
-
-<script type="module" src="{{ site.baseurl }}/assets/js/step-viewer.js"></script>
-
----
-
 ## Subassemblies
 
 | File | Description |
