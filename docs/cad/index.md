@@ -22,6 +22,10 @@ details on GitHub or clone the repository to open them locally.
 | [Compute Box]({{ site.baseurl }}/cad/new-compute-box.html) | Full compute box design: enclosure mounts, electropneumatic hardware, power electronics, connectors, and robot-base interface |
 | [Base CAD]({{ site.baseurl }}/cad/new-base-cad.html) | Robot base design: the motorized reel mechanism that houses, drives, and everts the vine body |
 
+![CAD Overview]({{ site.github_raw }}/SPROUT_Design/Documentation/Images/cad_overview.png)
+
+*(a) Assembled SPROUT platform and overall dimensions. (b) Exploded view of the compute box. (c) Exploded view of the vine base.*
+
 ## 3D preview
 
 The full SPROUT assembly (compute box + robot base) can be previewed directly in the browser.

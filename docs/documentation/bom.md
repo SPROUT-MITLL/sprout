@@ -179,9 +179,3 @@ The following spare components are recommended for field deployment:
 > - use locking connectors
 > - use waterproof feedthroughs for external connections
 > - maintain consistent connector labeling
-
-## Revision history
-
-| Revision | Date | Notes |
-|---|---|---|
-| A | 2026-05-20 | Initial BOM draft |
