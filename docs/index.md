@@ -50,20 +50,19 @@ reach the team and helps other builders who run into the same thing.
 
 ## Citation
 
-A paper describing SPROUT is planned for release on [arXiv](https://arxiv.org/). If you use SPROUT in your research, please cite it using the entry below.
+A paper describing SPROUT is available on [arXiv](https://arxiv.org/abs/2609.17781). If you use SPROUT in your research, please cite it using the entry below.
 
 {: .note }
-> This citation is a placeholder and will be updated with the final author list and arXiv identifier once the paper is posted.
 
 ```bibtex
-@misc{sprout2026,
-  title         = {SPROUT: An Open-Source, Open-Hardware Soft Robot for Search and Rescue},
-  author        = {Antonio Alvarez Valdivia, Ciera McFarland, Robert Reeve, Ankush Dhawan, Chad Council, Megan Richardson, Margaret McGuinness, and Nathaniel Hanson},
-  year          = {2026},
-  eprint        = {TODO: arXiv ID},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.RO},
-  url           = {https://arxiv.org/abs/TODO}
+@misc{valdivia2026sprout,
+      title={SPROUT: The Open-Source Soft Growing Robot for Search and Rescue}, 
+      author={Antonio Alvarez Valdivia and Ciera McFarland and Robert Reeve and Ankush Dhawan and Chad Council and Megan Richardson and Margaret McGuinness and Nathaniel Hanson},
+      year={2026},
+      eprint={2609.17781},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2609.17781}, 
 }
 ```
 

@@ -50,13 +50,13 @@ Detailed instructions for each stage are provided below.
 
 | Item | Qty | Manufacturer/Source | Part Number / Specification | Notes |
 |---|---:|---|---|---|
-| Heat-Sealable TPU Coated Nylon Fabric | TODO (width by length) | TODO | TODO | --- |
+| Heat-Sealable TPU Coated Nylon Fabric | At least 4 meters (width by length) | [Adventure Xpert](https://www.adventurexpert.com/product/30d-nylon-66-tpu-one-sided/) | --- | --- |
 | Painter's Tape (1 in) | 1 roll | [Scotch Blue](https://www.amazon.com/ScotchBlue-Original-Multi-Surface-Painters-2090-24NC/dp/B00004Z4CP/) | --- | --- |
 | Magic Tape (1 in) | 1 roll | [Scotch](https://www.amazon.com/Scotch-Magic-Tape-Inch-Count/dp/B01C5IHGJW/) | --- | --- |
 | Double-Sided Red Tape (Heat Resistant) | 1 roll | [Amazon](https://www.amazon.com/BAOFALI-Resistant-AdhesivesPerfect-Microbeads-Scrapbooking/dp/B0CHP8RTSV/) | --- | --- |
 | Permanent Marker, Fine Point | 1 | [Sharpie](https://www.amazon.com/Sharpie-37161PP-Permanent-Markers-Resists/dp/B00144862U/) | --- | --- |
 | PP/PVC Sheet | 1 | [Amazon](https://www.amazon.com/Plastic-Colored-Folders-Letter-Straight/dp/B09J1KNW1M/) | --- | Used a plastic folder, but could be anything that can be perforated or laser cut |
-| Push-to-Connect, Through-Wall Connectors | 3 | McMaster-Carr | TODO | --- |
+| Push-to-Connect, Through-Wall Connectors | 3 | [Amazon](https://a.co/d/0crJj5wt) | --- | --- |
 
 See the [main BOM]({{ site.baseurl }}/documentation/bom.html) for compute box hardware.
 
@@ -74,12 +74,12 @@ See the [main BOM]({{ site.baseurl }}/documentation/bom.html) for compute box ha
 {: .note }
 > The foot-operated heat sealer H-89 has limited space in the back between the sealing edge and the stand post. This makes it difficult to handle fabric while sealing, especially when making a long vine robot (10ft+). For an enhanced model that facilitates the process in a roll-to-roll manufacturing style, see the [H-1256 model](https://www.uline.com/Product/Detail/H-1256/Poly-Bag-Sealers/Foot-Operated-Impulse-Sealer-with-Cutter-18).
 
-### Provided files
+<!-- ### Provided files
 
 | File / Folder | Description |
 |---|---|
 | TODO | Robot body cutting pattern / template |
-| TODO | Reference drawings and dimensions |
+| TODO | Reference drawings and dimensions | -->
 
 ---
 
@@ -245,10 +245,10 @@ To test the robot, use a compressed air line at low pressure (~2 psi) and verify
 
 ---
 
-## Integration with the base
+<!-- ## Integration with the base
 
 TODO: How the finished vine mounts into the reel and connects to the base —
-see [Assembly → Step 8]({{ site.baseurl }}/documentation/assembly.html#step-8-assembly-with-robot-base) for how the base itself goes together.
+see [Assembly → Step 8]({{ site.baseurl }}/documentation/assembly.html#step-8-assembly-with-robot-base) for how the base itself goes together. -->
 
 ## Reference
 
